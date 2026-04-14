@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ClipboardList, Clock, Cpu, ListChecks, Brain, Target } from 'lucide-react';
+import { openConsultationModal } from '../lib/consultationModal';
 
 const WhatYouGet = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -126,7 +127,7 @@ const WhatYouGet = () => {
               Not sure which package is right for you?
             </p>
             <button 
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={openConsultationModal}
               className="text-[#FF6B35] font-medium hover:underline underline-offset-4 transition-all"
             >
               View pricing and book your consultation →

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { openConsultationModal } from '../lib/consultationModal';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,7 +62,7 @@ const Navigation = () => {
                 </button>
               ))}
               <button
-                onClick={() => scrollToSection('pricing')}
+                onClick={openConsultationModal}
                 className="btn-primary text-sm py-2.5 px-5"
               >
                 Book Consultation
@@ -97,7 +98,7 @@ const Navigation = () => {
             </button>
           ))}
           <button
-            onClick={() => scrollToSection('pricing')}
+            onClick={openConsultationModal}
             className="btn-primary mt-4"
           >
             Book Consultation

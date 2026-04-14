@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Check, Star, Zap, Crown, ArrowRight } from 'lucide-react';
+import { openConsultationModal } from '../lib/consultationModal';
 
 const Pricing = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -201,7 +202,7 @@ const Pricing = () => {
                       ? 'bg-[#FF6B35] text-white hover:scale-105' 
                       : 'bg-white/10 text-white hover:bg-white/20'
                   }`}
-                  onClick={() => window.open('mailto:vlad@bulletpoint.vc?subject=Consultation Booking', '_blank')}
+                  onClick={openConsultationModal}
                 >
                   {pkg.cta}
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />

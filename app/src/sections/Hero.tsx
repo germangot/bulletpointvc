@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Calendar, Users, TrendingUp, Award } from 'lucide-react';
+import { openConsultationModal } from '../lib/consultationModal';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,13 +10,6 @@ const Hero = () => {
     const timer = setTimeout(() => setIsVisible(true), 200);
     return () => clearTimeout(timer);
   }, []);
-
-  const scrollToPricing = () => {
-    const element = document.getElementById('pricing');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const stats = [
     { icon: Users, value: '300+', label: 'Startups Guided' },
@@ -111,12 +105,12 @@ const Hero = () => {
             }`}
             style={{ transitionDelay: '1100ms' }}
           >
-            <button onClick={scrollToPricing} className="btn-primary group">
+            <button onClick={openConsultationModal} className="btn-primary group">
               <Calendar className="w-5 h-5 mr-2" />
               Book Your Consultation — $500
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button onClick={scrollToPricing} className="btn-secondary">
+            <button onClick={openConsultationModal} className="btn-secondary">
               View Package Deals
             </button>
           </div>

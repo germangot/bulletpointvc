@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Calendar, Mail, AlertCircle } from 'lucide-react';
+import { openConsultationModal } from '../lib/consultationModal';
 
 const FinalCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -89,7 +90,7 @@ const FinalCTA = () => {
             style={{ transitionDelay: '900ms' }}
           >
             <button 
-              onClick={() => window.open('mailto:vlad@bulletpoint.vc?subject=Consultation Booking', '_blank')}
+              onClick={openConsultationModal}
               className="btn-primary text-lg py-5 px-10 animate-pulse-glow group"
             >
               <Calendar className="w-5 h-5 mr-2" />
@@ -107,11 +108,13 @@ const FinalCTA = () => {
           >
             <p className="text-white/50 mb-2">Prefer to talk first?</p>
             <a 
-              href="mailto:vlad@bulletpoint.vc"
+              href="https://t.me/muravyev_vlad"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#FF6B35] hover:underline underline-offset-4 transition-all"
             >
               <Mail className="w-4 h-4" />
-              vlad@bulletpoint.vc
+              t.me/muravyev_vlad
             </a>
           </div>
         </div>

@@ -46,13 +46,6 @@ const Advantage = () => {
     },
   ];
 
-  const stats = [
-    { value: '300+', label: 'Startups Guided' },
-    { value: '$150M+', label: 'Total Raised' },
-    { value: '500+', label: 'Investor Network' },
-    { value: '10+', label: 'Years Experience' },
-  ];
-
   return (
     <section
       id="advantage"
@@ -117,29 +110,30 @@ const Advantage = () => {
               </div>
             </div>
 
-            {/* Right Column - Stats Grid */}
+            {/* Right Column - Narrative Blocks */}
             <div
               className={`transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
               style={{ transitionDelay: '600ms' }}
             >
-              <div className="grid grid-cols-2 gap-4">
-                {stats.map((stat, index) => (
-                  <div
-                    key={index}
-                    className={`glass-card text-center transition-all duration-700 hover:border-[#FF6B35]/50 ${
-                      isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-                    }`}
-                    style={{ 
-                      transitionDelay: `${700 + index * 100}ms`,
-                      transform: isVisible ? `translateY(${index % 2 === 0 ? 0 : 20}px)` : undefined,
-                    }}
-                  >
-                    <div className="stat-number gradient-text mb-2">{stat.value}</div>
-                    <div className="text-sm text-white/50">{stat.label}</div>
-                  </div>
-                ))}
+              <div className="space-y-4">
+                <div className="glass-card border border-[#FF6B35]/20">
+                  <div className="text-[#FF6B35] font-semibold mb-3">What You Actually Get</div>
+                  <ul className="space-y-2 text-sm text-white/75">
+                    <li>• Sharp messaging that makes investors immediately understand the opportunity.</li>
+                    <li>• A clearer fundraising strategy tailored to your stage and category.</li>
+                    <li>• Better preparation for hard investor questions and diligence conversations.</li>
+                  </ul>
+                </div>
+
+                <div className="glass-card">
+                  <div className="text-[#FF6B35] font-semibold mb-2">Why Founders Hire Me</div>
+                  <p className="text-white/70 text-sm">
+                    Founders need more than a polished story. They need someone who can pressure-test
+                    the business through an investor lens and turn complexity into conviction.
+                  </p>
+                </div>
               </div>
 
               {/* Decorative Element */}

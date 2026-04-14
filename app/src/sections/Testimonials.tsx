@@ -26,7 +26,7 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      quote: "Vlad's consultation completely changed how I approached fundraising. His unconventional strategies helped us understand investor psychology on a deeper level. We didn't just get advice — we got a complete fundraising transformation that led to our $4M round.",
+      quote: "Vlad and his team create outstanding presentations and really help you get to the core of what you're trying to convey. Working with BulletPoint was a great experience. Their deck helped Refocus to secure a funding round of $4M. I'd highly recommend BulletPoint. I've collaborated with a lot of people in this space, and they're among the best out there.",
       name: 'Roman Kumar Vyas',
       role: 'CEO & Founder',
       company: 'Refocus',
@@ -34,7 +34,7 @@ const Testimonials = () => {
       image: '/founder-1.jpg',
     },
     {
-      quote: "The 3-hour consultation with Vlad was worth more than months of trial and error. He helped us structure our entire fundraising approach, from investor targeting to pitch delivery. His dual perspective as someone who's been on both sides is invaluable.",
+      quote: "Working with Vlad and his team was helpful for EBAC Online. They condensed all our data and ideas into a well-structured 25-page pitch deck. Their research and analytics were thorough. With the current pitch deck, we're even more confident in pitching EBAC Online to investors.",
       name: 'Andrey Anishchenko',
       role: 'Co-Founder',
       company: 'EBAC Online',
@@ -42,7 +42,7 @@ const Testimonials = () => {
       image: '/founder-2.jpg',
     },
     {
-      quote: "Vlad understands investor psychology better than anyone I've met. During our consultation, he revealed blind spots in our approach that we never would have seen. The step-by-step action plan he provided was exactly what we needed.",
+      quote: "Vlad is a sharp expert who understands investor's 'psychology' really well. We got very useful and applicable advice on fundraising, pitch preparation and storytelling. It is especially valuable that Vlad is very supportive and actively shares contacts from his wide networking.",
       name: 'Elena Dobrohotova',
       role: 'ex-CMO',
       company: 'NotYet',
@@ -50,7 +50,7 @@ const Testimonials = () => {
       image: '/founder-3.jpg',
     },
     {
-      quote: "Working with Vlad felt like finding a fellow visionary, not hiring a consultant. His ability to crystallize complex vision into compelling fundraising strategy is rare. The consultation sessions gave us clarity we'd been missing for months.",
+      quote: "It's not easy to create a Pitch Deck for a smart city, especially when there is a huge complex vision distributed among several teams. Working with Vlad felt less like outsourcing a Pitch Deck, and more like finding a fellow visionary. Vlad is a great storyteller: he had crystallized vision of Nuanu City in a captivating and engaging way, reducing complexity without sacrificing depth. After working with Vlad, we've presented this deck to numerous stakeholders and potential investors, and received tons of positive feedback. If you need a Pitch Deck that has both high clarity and powerful storytelling, Vlad's team offers something quite rare in this domain.",
       name: 'Nuanu City Team',
       role: 'Leadership',
       company: 'Nuanu City',
